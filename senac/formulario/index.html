@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    
+</head>
+<body>
+    <!-- atributo action -->
+    <h1>Formulario</h1>
+    <form action="registro.php" method="GET">
+    <div>
+       <label>Nome</label>
+       <input type="text"/>
+    </div>
+<!-- atributo name -->
+
+<div>
+    <label>Idade:</label>
+    <input type="text" name="age"/>
+    
+</div>
+
+<!-- atributo label -->
+
+<div>
+    <label for="age">Idade:</label>
+    <input type="text" name="age"/>
+</div>
+
+   <!-- limpando/reseando o formulario -->
+    <input type="reset" value="Limpar">
+
+<!-- submit botão -->
+
+<input type="submit" value="Enviar">
+
+<!-- Select -->
+ <div>
+    <label for="cidade">Selecione sua Cidade</label>
+    <select name="cidade">
+        <option value="São Paulo">São Paulo</option>
+        <option value="Taboão da Serra">Taboão da Serra</option>
+        <option value="Osasco">Osasco</option>
+    </select>
+ </div>
+
+ <!-- selected -->
+
+ <div>
+    <label for="selecao">Quem vai ganhar a proxima copa do mundo</label>
+    <select name="times">
+        <option value="Argentina">Argentina</option>
+        <option value="Franca">França</option>
+        <option value="Alemanha">Alemanha</option>
+        <option value="Brasil">Brasil</option>
+    </select>
+ </div>
+
+ <!-- selecao de varios select -->
+  <div>
+    <label for="acessorios">Selecione os acessorios do seu computador</label>
+    <select name="acessorios" multiple>
+        <option value="mouse">Mouse</option>
+        <option value="teclado">Teclado</option>
+        <option value="fone de ouvido">Fone de Ouvido</option>
+        <option value="webcam">Webcom</option>
+    </select>
+  </div>
+
+  <!-- textarea -->
+   <div>
+    <label for="feedback">Descreva o seu feedback sobre o nosso site</label>
+    <textarea name="feedback"></textarea>
+   </div>
+
+   <!-- fieldset -->
+    <div>
+        <fieldset>
+            <legend>Insira o seu endereço</legend>
+            <label for="rua">Rua</label>
+            <input type="text" name="rua">
+            <label for="bairro">Bairro</label>
+            <input type="text" name="bairro">
+        </fieldset>
+    </div>
+
+    <!-- datalist -->
+
+    <div>
+        <label for="livro">selecione seu livro</label>
+        <input type="text" list="livros" name="livro">
+
+        <datalist id="livros">
+            <option value="crepusculo"></option>
+            <option value="Harry Potter e a Pedra Filosofal"></option>
+            <option value="A Hospedeira"></option>
+            <option value="Harry Potter e o Cálice de fogo"></option>
+
+        </datalist>
+    </div>
+
+    <!-- PASSWORD/ SENHA -->
+
+    <div>
+        <label for="senha">Senha</label>
+        <input type="password" name="senha">
+    </div>
+    
+    <!-- input Radio  -->
+
+    <div>
+        <label for="genero">Qual o seu gênero:</label>
+        <div class="radio">
+            <input type="radio" value="feminino" name="genero">
+            <label for="feminino">Feminino</label>
+        </div>
+        <div class="radio">
+            <input type="radio" value="Masculino" name="genero">
+            <label for="Masculino">Masculino</label>
+        </div>
+
+        <div class="radio">
+            <input type="radio" value="NaoBinario" name="genero">
+            <label for="NaoBinario">Não Binario</label>
+        </div>
+    </div>
+<!-- input checkbox -->
+ <div>
+    <label for="linguasestrangeiras">quais linguas estrangeiras vc pretende estudar?</label>
+
+ </div>
+ <div class="radio">
+    <input type="checkbox" name="linguasestrangeiras" value="ingles">
+    <label for="ingles">Inglês</label>
+
+ </div>
+
+ <div class="radio">
+    <input type="checkbox" name="linguasestrangeiras" value="espanhol">
+    <label for="espanhol">Espanhol</label>
+
+ </div>
+
+ <div class="radio">
+    <input type="checkbox" name="linguasestrangeiras" value="alemao">
+    <label for="alemao">Alemão</label>
+
+ </div>
+
+ <!-- input data -->
+
+ <div>
+    <label for="datadenascimento">Data de Nascimento</label>
+    <input type="date" name="datadenascimento">
+ </div>
+
+ <!-- input file -->
+  <div>
+    <label for="arquivo">Insira seu curriculo em PDF</label>
+    <input type="file" name="arquivo">
+  </div>
+
+  <!-- input number -->
+
+  <div>
+    <label for="certificado">Quantos certificados você possui?</label>
+    <input type="number" name="certificados">
+  </div>
+
+  <!-- input email -->
+   <div>
+    <label for="emailinserido">Insira o seu e-mail</label>
+    <input type="email" name="emailinserido">
+   </div>
+
+   <!-- atributo Value -->
+
+   <div>
+    <label for="confirmaraula">Você assistiu a video aula de treinamento da empresa?</label>
+    <input type="text" value="Confirmo que assisti!" name="confirmaraula">
+   </div>
+
+   <!-- disabled -->
+    <div>
+        <p>Informe seu RG</p>
+        <input type="text" value="Não precisa preencher este campo" disabled>
+    </div>
+    <!-- atributo placeholder -->
+
+    <div>
+        <label for="pesquisa">Como achou nosso site</label>
+        <input type="text" name="pesquisa" placeholder="No Google ou Intagram ">
+    </div>
+
+    <!-- atributo required -->
+     <div>
+        <label for="sobrenome">Digite o seu sobrenome</label>
+        <input type="text" name="sobrenome" placeholder=" sobrenome completo" required>
+     </div>
+    </form>
+</body>
+</html>
